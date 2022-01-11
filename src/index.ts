@@ -17,18 +17,17 @@ const wrapper = (utils: Utilities<unknown>) => {
 		let upperCase = false;
 
 		// Here, any truthy value of the environment variable `UPPER_CASE` will turn on the upper case conversion.
-		// @ts-expect-error weird stuff
-		if (process.env.UPPER_CASE) {
+		if (process.env['UPPER_CASE']) {
 			upperCase = true;
 		}
 
 		// Validate the expression to see if it should be processed by your plugin
 		if (expression === 'hello') {
 			if (upperCase) {
-				return 'HELLO WORLD!';
+				return 'HELLO, WORLD!';
 			}
 
-			return 'hello world!';
+			return 'hello, world!';
 		}
 
 		/**

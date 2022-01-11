@@ -8,12 +8,12 @@ const mockedUtils = {
 }
 
 test('general', async t => {
-	t.is(await parsifyExamplePlugin(mockedUtils)('hello'), 'hello world!');
+	t.is(await parsifyExamplePlugin(mockedUtils)('hello'), 'hello, world!');
 });
 
 test('with environmental variable', async t => {
 	process.env.UPPER_CASE = 'true';
-	t.is(await parsifyExamplePlugin(mockedUtils)('hello'), 'HELLO WORLD!');
+	t.is(await parsifyExamplePlugin(mockedUtils)('hello'), 'HELLO, WORLD!');
 });
 
 test('custom function', async t => {
