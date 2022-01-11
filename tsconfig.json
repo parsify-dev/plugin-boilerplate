@@ -1,0 +1,15 @@
+{
+	"extends": "@sindresorhus/tsconfig",
+	"compilerOptions": {
+		"outDir": "dist",
+		"moduleResolution": "node",
+		"target": "es2018",
+		"lib": [
+			"es2018"
+		],
+		"noPropertyAccessFromIndexSignature": true,
+	},
+	"include": [
+		"src/**/*"
+	]
+}
