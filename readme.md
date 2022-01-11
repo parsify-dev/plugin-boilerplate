@@ -11,7 +11,7 @@ Install `@parsify/hello` using Parsify Desktop - see the [guide](https://docs.pa
 ```bash
 hello                               | hello, world!
 # With UPPER_CASE env variable      |
-hello                               | HELLO,  WORLD!
+hello                               | HELLO, WORLD!
 # Creates a `toUpperCase` function  |
 toUpperCase("foo")                  | FOO
 ```
